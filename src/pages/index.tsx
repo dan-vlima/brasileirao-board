@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Teste from '../components/teste'
+import { Teste } from '../components'
 import { useGetAllChampionshipData } from '../hooks'
 
 

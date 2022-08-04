@@ -1,10 +1,14 @@
+import { Column, Text } from "./toolkit"
+
 const Teste = () => {
     return (
-      <div className="flex flex-col space-y-16 bg-red-500">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
+      <div className="w-44">
+      <Column className=" space-y-16 bg-blue-200 w-full">
+      <Text>Teste 1</Text>
+      <Text>Teste 2</Text>
+      <Text>Teste 3</Text>
+    </Column></div>
+      
     )
   }
   
