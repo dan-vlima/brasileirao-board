@@ -4,6 +4,8 @@ import MatchCard from "./match-card";
 import { useGetAllLiveMatches } from "../hooks/use-get-all-live-matches";
 import Spinner from "./toolkit/spinner";
 import ChevronDownIcon from "./toolkit/chevron-down-icon";
+import { useGetAllAthletes, useGetAllStrikers } from "../hooks";
+
 
 const ChampionshipBoardBox = () => {
   const { data: liveMatches, isLoading: liveMatchesLoading } =
@@ -33,6 +35,7 @@ const ChampionshipBoardBox = () => {
         </Column>
       </header>
       <main>
+        <img></img>
         {liveMatchesLoading ? <Flex className="items-center justify-center bg-white py-24"><Spinner/></Flex> : <div className="grid grid-cols-2 divide-x bg-white">
         {liveMatches?.map((match) => (
       <MatchCard
