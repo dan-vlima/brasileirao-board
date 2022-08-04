@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Teste from '../components/teste'
-import styles from '../styles/Home.module.css'
+import { useGetAllChampionshipData } from '../hooks'
+
 
 const Home: NextPage = () => {
+  const { data: championshipData, isLoading: championshipDataIsLoading } = useGetAllChampionshipData('14')
+
+  console.log(championshipData)
+
   return (
     <Teste/>
   )
