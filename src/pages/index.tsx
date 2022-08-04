@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   console.log(championshipData);
 
   return (
-    <div className="flex items-center justify-center h-screen ">
+    <div className="flex items-center justify-center h-screen bg-green-100">
       <ChampionshipBoardBox/>
     </div>
     
