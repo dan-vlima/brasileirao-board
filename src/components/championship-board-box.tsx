@@ -3,6 +3,7 @@ import { Column, Flex, Row, Text } from "./toolkit";
 import MatchCard from "./match-card";
 import { useGetAllLiveMatches } from "../hooks/use-get-all-live-matches";
 import Spinner from "./toolkit/spinner";
+import ChevronDownIcon from "./toolkit/chevron-down-icon";
 
 const ChampionshipBoardBox = () => {
   const { data: liveMatches, isLoading: liveMatchesLoading } =
@@ -57,7 +58,7 @@ const ChampionshipBoardBox = () => {
           </Row>
           <Flex className=" py-5 relative w-full bg-slate-50">
             <Column className="mx-auto">
-              <button className="absolute mt-[-30px] pl-5">O</button>
+              <button className="absolute mt-[-30px] pl-5 "><circle><ChevronDownIcon/></circle></button>
               <Text className="items-center  bg-slate-50">Ver mais</Text>
             </Column>
           </Flex>
