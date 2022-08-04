@@ -1,3 +1,3 @@
-import Teste from "./teste";
+import Teste from "./match-card";
 
 export { Teste }

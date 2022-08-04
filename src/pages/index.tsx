@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Teste } from '../components'
+import MatchCard from '../components/match-card'
 import { useGetAllChampionshipData } from '../hooks'
 
 
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   console.log(championshipData)
 
   return (
-    <Teste/>
+    <MatchCard/>
   )
 }
 
