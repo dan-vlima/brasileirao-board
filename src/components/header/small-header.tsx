@@ -1,4 +1,5 @@
 import { Column, Row, Text } from "../toolkit"
+import HeaderNavbar from "./header-navbar"
 
 const SmallHeader = () => {
   return (
@@ -9,18 +10,7 @@ const SmallHeader = () => {
             <Text as='h1' className="text-lg font-medium">Brasileirão Série B</Text>
           </Row>
           <Row className="justify-center text-sm text-gray-100">
-            <a href='/all-matches'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-7 ">
-              PARTIDAS
-            </button></a>
-            <a href='/standings'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-6 ">
-              CLASSIFICAÇÃO
-            </button></a>
-            <a href='/stats'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-6 ">
-              ESTATÍSTICAS
-            </button></a>
-            <a href='/athletes-board'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-7 ">
-              JOGADORES
-            </button></a>
+            <HeaderNavbar/>
           </Row>
         </Column>
       </header>
