@@ -19,7 +19,7 @@ const StandingsScreen = () => {
             <Text className="text-gray-500 pt-3">Temporada</Text>
             <Text className="text-blue-500 font-bold">2022</Text>
           </Column>
-          <div className="grid grid-cols-2 ">
+          <div className="grid grid-cols-2 text-gray-500">
             <Text className="border-t text-sm pl-6 py-2">Clube</Text>
             <div className="grid grid-cols-9 text-sm border-t pr-6 py-2">
               <Text>Pts</Text>

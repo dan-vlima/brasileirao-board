@@ -1,8 +1,5 @@
-import { Url } from "url";
-import { LiveMatchType } from "../types/live-match-type";
-import { Column, Flex, Row, Text } from "./toolkit";
-import GridColumn from "./toolkit/grid-column";
-import GridRow from "./toolkit/grid-row";
+import { Column, Row, Text } from "./toolkit";
+
 
 export type MatchCardProps = {
   homeTeamLogoUrl: string,

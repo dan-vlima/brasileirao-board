@@ -10,7 +10,7 @@ import { useGetAllLiveMatches } from "../hooks/use-get-all-live-matches";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-green-100">
+    <div className="flex items-center justify-center h-screen">
       <ChampionshipBoardBox/>
     </div>
     

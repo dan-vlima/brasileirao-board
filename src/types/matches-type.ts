@@ -1,4 +1,3 @@
-import { Url } from "url"
 
 export type MatchesType = {
    partidas: { 
@@ -11,7 +10,7 @@ export type MatchesType = {
                time_id: number
                nome_popular: string     
                sigla: string    
-               escudo: Url  
+               escudo: string  
              }
              time_visitante: {
                time_id: number
@@ -24,7 +23,7 @@ export type MatchesType = {
              data_realizacao: string    
              hora_realizacao: string    
              data_realizacao_iso: string    
-             _link: Url
+             _link: string
            }
          }
        }
