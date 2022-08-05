@@ -13,7 +13,7 @@ type AthletesCardProps = {
 
 const AthletesCard: React.FC<AthletesCardProps> = ({name, role, team, teamLogoUrl, athleteImgUrl}) => {
   return (
-    <Column className="w-24 h-48 justify-between border rounded">
+    <Column className="w-24 h-48 justify-between border rounded shadow-xs shrink-0">
       <img
         className="h-24 w-24 border-b"
         src='https://thumbs.dreamstime.com/b/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-116470332.jpg'

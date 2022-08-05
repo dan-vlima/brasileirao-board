@@ -1,4 +1,7 @@
 import { useGetAllAthletes } from "../../../../hooks";
+import Container from "../../container";
+import Flex from "../../flex";
+import ExtendedHeader from "../components/extended-header";
 import AthletesCard from "./athletes-card"
 
 const AthletesBoardScreen = () => {
@@ -8,11 +11,20 @@ const AthletesBoardScreen = () => {
     console.log(athletes)
 
     return (
-        <div className="grid grid-cols-7 w-[44rem] gap-x-6 gap-y-1">
+        <>
+        <ExtendedHeader />
+        <Flex className="justify-center items-center ">
+        <div className="grid grid-cols-7 gap-x-2 gap-y-1 border px-2 shadow">
             {athletes?.map(athlete => <div className="pt-1"><AthletesCard key={athlete.Atleta.atleta_id} name={athlete.Atleta.apelido} role={athlete.posicao} team={athlete.clube_nome} teamLogoUrl={athlete.escudo_clube} athleteImgUrl={athlete.Atleta.foto}/></div>)}
-            
         </div>
+        </Flex>
         
+        
+        
+     
+        
+        
+        </>
     )
 }
 
