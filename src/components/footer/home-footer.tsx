@@ -8,12 +8,12 @@ const HomeFooter = () => {
         <Text>Todos os horários estão no: Horário de Brasília</Text>
         <Text className="italic">Feedback</Text>
       </Row>
-      <Flex className=" py-5 relative w-full bg-slate-50 rounded-b-lg">
+      <a href='/all-matches'><Flex className=" py-5 relative w-full bg-slate-50 rounded-b-lg">
         <Column className="mx-auto">
-          <a href='/all-matches'><button className="absolute mt-[-30px] pl-5 "><ArrowDownIcon/></button></a>
+          <button className="absolute mt-[-30px] pl-5 "><ArrowDownIcon/></button>
           <Text className="items-center bg-slate-50">Ver mais</Text>
         </Column>
-      </Flex>
+      </Flex></a>
     </Column>
   </footer>
 }
