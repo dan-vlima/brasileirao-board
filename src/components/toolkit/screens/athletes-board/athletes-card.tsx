@@ -8,10 +8,9 @@ type AthletesCardProps = {
     role: string
     team: string
     teamLogoUrl: string
-    athleteImgUrl: string
 }
 
-const AthletesCard: React.FC<AthletesCardProps> = ({name, role, team, teamLogoUrl, athleteImgUrl}) => {
+const AthletesCard: React.FC<AthletesCardProps> = ({name, role, team, teamLogoUrl}) => {
   return (
     <Column className="w-24 h-48 justify-between border rounded shadow-xs shrink-0">
       <img

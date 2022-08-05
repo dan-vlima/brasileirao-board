@@ -11,7 +11,7 @@ export type StrikerType =
         time_id: number,
         nome_popular: string,
         sigla: string,
-        escudo: Url
+        escudo: string
       },
       gols: number
     }

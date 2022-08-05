@@ -5,36 +5,36 @@ import Text from "../../text";
 
 type AthletesCardProps = {
   name: string;
-  role: string;
-  team: string;
+  goals: number
   teamLogoUrl: string;
-  athleteImgUrl: string;
+  team: string
+  rank: number
 };
 
 const AthleteStats: React.FC<AthletesCardProps> = ({
   name,
-  role,
-  team,
   teamLogoUrl,
-  athleteImgUrl,
+  team,
+  goals,
+  rank,
 }) => {
   return (
-    <Row className="justify-between border-t pt-2 pl-4">
+    <Row className="justify-between border-t py-2 pl-4">
       <Row>
         <Row className='space-x-4 pr-4 items-center'>
-          <Text>1</Text>
-          <Text>a</Text>
+          <Text>{rank}</Text>
+          <img className="h-10 w-10 rounded-full" src="https://thumbs.dreamstime.com/b/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-116470332.jpg"/>
         </Row>
 
         <Column>
-          <Text>Germán Cano</Text>
+          <Text>{name}</Text>
           <Row className="space-x-4">
-            <Text>a</Text>
-            <Text>Fluminense</Text>
+            <img className="h-6 w-4" src={teamLogoUrl} />
+            <Text>{team}</Text>
           </Row>
         </Column>
       </Row>
-      <Text>12</Text>
+      <Text className="flex items-center pr-4">{goals}</Text>
     </Row>
   );
 };
