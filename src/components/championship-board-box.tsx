@@ -5,7 +5,7 @@ import { useGetAllLiveMatches } from "../hooks/use-get-all-live-matches";
 import Spinner from "./toolkit/spinner";
 import ChevronDownIcon from "./toolkit/chevron-down-icon";
 import { useGetAllAthletes, useGetAllStrikers } from "../hooks";
-import SmallHeader from "./toolkit/screens/components/small-header";
+import SmallHeader from "./toolkit/screens/header/small-header";
 
 
 const ChampionshipBoardBox = () => {

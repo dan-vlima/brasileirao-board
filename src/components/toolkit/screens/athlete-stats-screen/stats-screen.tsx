@@ -1,7 +1,8 @@
 import { Column, Flex, Row, Text } from "../..";
 import { useGetAllStrikers } from "../../../../hooks";
 import Container from "../../container";
-import ExtendedHeader from "../components/extended-header";
+import ExtendedHeader from "../header/extended-header";
+
 import AthleteStats from "./athlete-stats";
 
 const AthletesStatsScreen = () => {

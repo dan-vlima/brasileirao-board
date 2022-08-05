@@ -7,7 +7,7 @@ export type StandingType = {
     time_id: number
       nome_popular: string
       sigla: string
-      escudo: Url
+      escudo: string
     }
     jogos: number
     vitorias: number
