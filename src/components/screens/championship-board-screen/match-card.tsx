@@ -1,4 +1,4 @@
-import { Column, Row, Text } from "./toolkit";
+import { Column, Row, Text } from "../../toolkit";
 
 
 export type MatchCardProps = {

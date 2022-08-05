@@ -1,12 +1,10 @@
 import React from "react";
-import { Column, Flex, Row, Text } from "./toolkit";
+import { Column, Flex, Row, Text } from "../../toolkit";
 import MatchCard from "./match-card";
-import { useGetAllLiveMatches } from "../hooks/use-get-all-live-matches";
-import Spinner from "./toolkit/spinner";
-import ChevronDownIcon from "./toolkit/chevron-down-icon";
-import { useGetAllAthletes, useGetAllMatches, useGetAllStrikers } from "../hooks";
-import SmallHeader from "./toolkit/screens/header/small-header";
-import ArrowDownIcon from "./arrow-down-icon";
+import { useGetAllLiveMatches } from "../../../hooks/use-get-all-live-matches";
+import Spinner from "../../toolkit/spinner";
+import SmallHeader from "../../header/small-header";
+import ArrowDownIcon from "../../toolkit/arrow-down-icon";
 
 
 const ChampionshipBoardBox = () => {

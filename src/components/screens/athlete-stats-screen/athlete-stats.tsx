@@ -1,7 +1,6 @@
-import Column from "../../column";
-import GridColumn from "../../grid-column";
-import Row from "../../row";
-import Text from "../../text";
+import Column from "../../toolkit/column";
+import Row from "../../toolkit/row";
+import Text from "../../toolkit/text";
 
 type AthletesCardProps = {
   name: string;

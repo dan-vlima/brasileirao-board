@@ -1,5 +1,5 @@
-import Row from "../../row";
-import Text from "../../text";
+import Row from "../../toolkit/row";
+import Text from "../../toolkit/text";
 
 type TeamStatsType = {
   rank: number

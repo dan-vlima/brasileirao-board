@@ -1,9 +1,7 @@
-import { useGetStandings } from "../../../../hooks";
-import Column from "../../column";
-import Flex from "../../flex";
-import Row from "../../row";
-import Text from "../../text";
-import ExtendedHeader from "../header/extended-header";
+import { useGetStandings } from "../../../hooks";
+import Column from "../../toolkit/column";
+import Text from "../../toolkit/text";
+import ExtendedHeader from "../../header/extended-header";
 import TeamStats from "./team-stats";
 
 const StandingsScreen = () => {

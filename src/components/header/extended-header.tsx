@@ -1,5 +1,6 @@
-import { Column, Row, Text } from "../..";
-import ArrowLeftIcon from "../../arrow-left";
+
+import { Column, Row, Text } from "../toolkit";
+import ArrowLeftIcon from "../toolkit/arrow-left";
 
 const ExtendedHeader = () => {
   return (

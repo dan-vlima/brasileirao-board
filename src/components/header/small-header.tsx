@@ -1,4 +1,5 @@
-import { Column, Row, Text } from "../..";
+import { Column, Row, Text } from "../toolkit"
+
 
 const SmallHeader = () => {
   return (

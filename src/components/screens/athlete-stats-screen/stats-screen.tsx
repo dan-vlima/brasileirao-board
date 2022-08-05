@@ -1,7 +1,6 @@
-import { Column, Flex, Row, Text } from "../..";
-import { useGetAllStrikers } from "../../../../hooks";
-import Container from "../../container";
-import ExtendedHeader from "../header/extended-header";
+import { Column, Flex, Row, Text } from "../../toolkit";
+import { useGetAllStrikers } from "../../../hooks";
+import ExtendedHeader from "../../header/extended-header";
 
 import AthleteStats from "./athlete-stats";
 

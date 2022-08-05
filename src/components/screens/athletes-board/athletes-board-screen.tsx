@@ -1,6 +1,6 @@
-import { useGetAllAthletes } from "../../../../hooks";
-import Flex from "../../flex";
-import ExtendedHeader from "../header/extended-header";
+import { useGetAllAthletes } from "../../../hooks";
+import Flex from "../../toolkit/flex";
+import ExtendedHeader from "../../header/extended-header";
 import AthletesCard from "./athletes-card"
 
 const AthletesBoardScreen = () => {

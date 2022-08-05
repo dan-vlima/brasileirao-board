@@ -1,4 +1,4 @@
-import StandingsScreen from "../components/toolkit/screens/standings-screen/standings-screen"
+import StandingsScreen from "../components/screens/standings-screen/standings-screen"
 
 const Standings = () => {
     return <StandingsScreen/>
