@@ -5,6 +5,11 @@ import Spinner from "../toolkit/spinner";
 
 
 const MatchesGrid = () => {
+
+
+    // Abaixo, tive que fazer 2 maps para não pegar dados mockados, pois a API gratuita traz poucos recursos,
+    // insuficientes para popular de maneira satisfatória a grid de partidas  
+
     const { data: liveMatches, isLoading: liveMatchesLoading } =
     useGetAllLiveMatches();
     return <>
