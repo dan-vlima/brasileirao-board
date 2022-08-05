@@ -3,6 +3,7 @@ import Column from "../../toolkit/column";
 import Text from "../../toolkit/text";
 import ExtendedHeader from "../../header/extended-header";
 import TeamStats from "./team-stats";
+import FlexCenteredSpinner from "../../toolkit/flex-centered-spinner";
 
 const StandingsScreen = () => {
   const { data: standings, isLoading: standingsLoading } =
@@ -11,7 +12,7 @@ const StandingsScreen = () => {
   return (
     <>
       <ExtendedHeader />
-      <div className="flex flex-col max-w-full items-center">
+      { standingsLoading ? <FlexCenteredSpinner/> :  <div className="flex flex-col max-w-full items-center">
         <Column className="w-[742px] pb-8 border-x border-b  rounded-b-lg">
           <Column className="text-sm pb-4 space-y-1 pl-6 bg-gray-100">
             <Text className="text-gray-500 pt-3">Temporada</Text>
@@ -83,7 +84,8 @@ const StandingsScreen = () => {
             </Column>
           </div>
         </Column>
-      </div>
+      </div> }
+      
     </>
   );
 };

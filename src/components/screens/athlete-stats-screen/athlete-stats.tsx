@@ -24,7 +24,6 @@ const AthleteStats: React.FC<AthletesCardProps> = ({
           <Text>{rank}</Text>
           <img className="h-10 w-10 rounded-full" src="https://thumbs.dreamstime.com/b/default-placeholder-fitness-trainer-t-shirt-default-placeholder-fitness-trainer-t-shirt-half-length-portrait-photo-116470332.jpg"/>
         </Row>
-
         <Column>
           <Text>{name}</Text>
           <Row className="space-x-4">

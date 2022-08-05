@@ -1,18 +1,28 @@
-import { Column, Flex, Row, Text } from "../../toolkit";
+import { Column, Row, Text } from "../../toolkit";
 import { useGetAllStrikers } from "../../../hooks";
 import ExtendedHeader from "../../header/extended-header";
-
 import AthleteStats from "./athlete-stats";
-import Spinner from "../../toolkit/spinner";
+import FlexCenteredSpinner from "../../toolkit/flex-centered-spinner";
 
 const AthletesStatsScreen = () => {
-  const { data: strikers, isLoading: strikersLoading } =
+  const { data: strikers, isLoading: strikersIsLoading } =
     useGetAllStrikers("14");
+
+    const strikersMapper = strikers?.map((striker, index) => (
+      <AthleteStats
+        key={striker.atleta.atleta_id}
+        name={striker.atleta.nome_popular}
+        teamLogoUrl={striker.time.escudo}
+        team={striker.time.nome_popular}
+        goals={striker.gols}
+        rank={index + 1}
+      />
+    ))
 
   return (
     <>
       <ExtendedHeader />
-      {strikersLoading ? <Flex className="items-center justify-center bg-white py-24"><Spinner/></Flex> : <div className="flex flex-col max-w-full justify-center items-center">
+      {strikersIsLoading ? <FlexCenteredSpinner/> : <div className="flex flex-col max-w-full justify-center items-center">
           <Column className="w-[742px]  px-8 pt-6 pb-8 border-x ">
             <Text className="pb-2 pl-4">Gols</Text>
             <Row className="justify-between pb-2 text-gray-500 text-sm font-semibold">
@@ -21,16 +31,7 @@ const AthletesStatsScreen = () => {
                 <Text>Gols</Text>
               </div>
             </Row>
-            {strikers?.map((striker, index) => (
-              <AthleteStats
-                key={striker.atleta.atleta_id}
-                name={striker.atleta.nome_popular}
-                teamLogoUrl={striker.time.escudo}
-                team={striker.time.nome_popular}
-                goals={striker.gols}
-                rank={index + 1}
-              />
-            ))}
+            {strikersMapper}
           </Column>
           <Column className="w-[742px]  px-8 pb-8 border-x  ">
             <Text className="pb-2 pl-4">Assistências</Text>
@@ -40,16 +41,7 @@ const AthletesStatsScreen = () => {
                 <Text>Gols</Text>
               </div>
             </Row>
-            {strikers?.map((striker, index) => (
-              <AthleteStats
-                key={striker.atleta.atleta_id}
-                name={striker.atleta.nome_popular}
-                teamLogoUrl={striker.time.escudo}
-                team={striker.time.nome_popular}
-                goals={striker.gols}
-                rank={index + 1}
-              />
-            ))}
+            {strikersMapper}
           </Column>
           <Column className="w-[742px] px-8 pb-8 border-x  ">
             <Text className="pb-2 pl-4">Cartões amarelos</Text>
@@ -59,16 +51,7 @@ const AthletesStatsScreen = () => {
                 <Text>Gols</Text>
               </div>
             </Row>
-            {strikers?.map((striker, index) => (
-              <AthleteStats
-                key={striker.atleta.atleta_id}
-                name={striker.atleta.nome_popular}
-                teamLogoUrl={striker.time.escudo}
-                team={striker.time.nome_popular}
-                goals={striker.gols}
-                rank={index + 1}
-              />
-            ))}
+            {strikersMapper}
           </Column>
           <Column className="w-[742px]  px-8 pb-8 border-x  ">
             <Text className="pb-2 pl-4">Cartões vermelhos</Text>
@@ -78,16 +61,7 @@ const AthletesStatsScreen = () => {
                 <Text>Gols</Text>
               </div>
             </Row>
-            {strikers?.map((striker, index) => (
-              <AthleteStats
-                key={striker.atleta.atleta_id}
-                name={striker.atleta.nome_popular}
-                teamLogoUrl={striker.time.escudo}
-                team={striker.time.nome_popular}
-                goals={striker.gols}
-                rank={index + 1}
-              />
-            ))}
+            {strikersMapper}
           </Column>
       </div>}
       

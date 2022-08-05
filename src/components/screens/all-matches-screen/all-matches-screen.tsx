@@ -15,7 +15,6 @@ const AllMatchesScreen = () => {
           <MatchesGrid/>
           <HomeFooter/>
         </div>
-        
       </div>
     </>
   );
