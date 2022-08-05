@@ -23,7 +23,7 @@ const MatchCard: React.FC<MatchCardProps> = ({
   matchHour}) => {
   return (
     <>
-      <Row className="justify-around pt-10 pr-2 pb-10 pl-2 border-b shrink-0">
+      <Row className="justify-around pt-10 pr-2 pb-10 pl-2 shrink-0">
         <Column className="space-y-2 shrink-0 justify-center">
           <img src={homeTeamLogoUrl} className="h-6 w-8"/>
           <img src={awayTeamLogoUrl} className="h-6 w-8"/>

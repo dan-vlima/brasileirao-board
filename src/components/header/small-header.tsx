@@ -1,6 +1,5 @@
 import { Column, Row, Text } from "../toolkit"
 
-
 const SmallHeader = () => {
   return (
     <header className="bg-green-800 text-white rounded-t-lg">
@@ -10,16 +9,16 @@ const SmallHeader = () => {
             <Text as='h1' className="text-lg font-medium">Brasileirão Série B</Text>
           </Row>
           <Row className="justify-center text-sm text-gray-100">
-            <a href='/'><button className="hover:bg-green-900 h-10 px-7 ">
+            <a href='/all-matches'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-7 ">
               PARTIDAS
             </button></a>
-            <a href='/standings'><button className="hover:bg-green-900 h-10 px-6 ">
+            <a href='/standings'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-6 ">
               CLASSIFICAÇÃO
             </button></a>
-            <a href='/stats'><button className="hover:bg-green-900 h-10 px-6 ">
+            <a href='/stats'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-6 ">
               ESTATÍSTICAS
             </button></a>
-            <a href='/athletes-board'><button className="hover:bg-green-900 h-10 px-7 ">
+            <a href='/athletes-board'><button className="hover:bg-green-900 hover:border-b-2 h-10 px-7 ">
               JOGADORES
             </button></a>
           </Row>
