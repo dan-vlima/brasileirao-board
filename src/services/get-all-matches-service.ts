@@ -4,7 +4,7 @@ import { MatchesType } from "../types/matches-type";
 
 const getAllMatchesService = async (championshipId: string) => {
   try {
-    const response = await api.get<MatchesType>(`/campeonatos/${championshipId}/partidas`)
+    const response = await api.get<MatchesType[]>(`/campeonatos/${championshipId}/partidas`)
     return response.data
     
   } catch (error: any) {
