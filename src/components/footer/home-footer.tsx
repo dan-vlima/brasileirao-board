@@ -10,8 +10,8 @@ const HomeFooter = () => {
       </Row>
       <Flex className=" py-5 relative w-full bg-slate-50 rounded-b-lg">
         <Column className="mx-auto">
-          <a href='/'><button className="absolute mt-[-30px] pl-5 "><ArrowDownIcon/></button></a>
-          <Text className="items-center  bg-slate-50">Ver mais</Text>
+          <a href='/all-matches'><button className="absolute mt-[-30px] pl-5 "><ArrowDownIcon/></button></a>
+          <Text className="items-center bg-slate-50">Ver mais</Text>
         </Column>
       </Flex>
     </Column>
